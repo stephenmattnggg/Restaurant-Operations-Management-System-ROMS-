@@ -1,0 +1,64 @@
+# Restaurant Inventory Operations System
+
+A workflow-based restaurant inventory and operational tracking system designed to automate inventory monitoring, waste logging, stock movement tracking, and low-stock visibility for small and medium-sized food businesses.
+
+---
+
+## Overview
+
+This project is built to streamline restaurant inventory operations through modular workflow automation and centralized stock monitoring.
+
+The system currently focuses on:
+
+- Inventory tracking
+- Waste management
+- Stock movement logging
+- Low-stock monitoring
+- Employee operational input
+- Webhook-based process automation
+
+The architecture is designed to be scalable for future operational modules and integrations.
+
+---
+
+## Core Features
+
+- Stock-in workflow automation
+- Waste tracking system
+- Inventory movement logging
+- Real-time stock querying
+- Low-stock monitoring
+- Employee operations terminal
+- Webhook-based backend processing
+- Modular workflow architecture
+- Operational response dashboard
+
+---
+
+## Supported Operations
+
+### STOCK_IN
+Adds inventory quantities and records stock movement logs.
+
+### WASTE
+Deducts spoiled or wasted inventory items while maintaining movement history.
+
+### QUERY_STOCK
+Checks the current stock level of a specific ingredient.
+
+### QUERY_LOW
+Displays all ingredients currently below or equal to minimum stock threshold.
+
+---
+
+## System Architecture
+
+```text
+Webhook → Normalize Input → Action Router → Operation Flows
+        → Inventory Processing → Google Sheets Database
+        → Response Formatter → Frontend Dashboard
+
+## Author
+
+Stephen Matthew R. Ng
+BS Industrial Engineering — Saint Louis University
